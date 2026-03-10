@@ -1,0 +1,37 @@
+{
+  "name": "@handyjskit/toaster",
+  "version": "1.0.0",
+  "description": "A small, configurable browser toast notification package with zero dependencies.",
+  "type": "module",
+  "main": "./dist/toaster.cjs",
+  "module": "./dist/toaster.esm.js",
+  "unpkg": "./dist/toaster.min.js",
+  "jsdelivr": "./dist/toaster.min.js",
+  "exports": {
+    ".": {
+      "import": "./dist/toaster.esm.js",
+      "require": "./dist/toaster.cjs",
+      "default": "./dist/toaster.esm.js"
+    },
+    "./dist/toaster.min.js": "./dist/toaster.min.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "demo": "npm run build && node ./scripts/demo.mjs"
+  },
+  "keywords": [
+    "toast",
+    "toaster",
+    "notification",
+    "popup",
+    "javascript",
+    "browser"
+  ],
+  "author": "",
+  "license": "MIT"
+}
